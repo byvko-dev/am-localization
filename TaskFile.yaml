@@ -6,6 +6,18 @@ tasks:
   upload:
     desc: Upload the source file to Translized. Add -- {code} to upload a specific language, defaults to en
     cmds:
+      - task: generate-config-from-env
+      - translized upload -o true
+
+  download:
+    desc: Download all translations from Translized
+    cmds:
+      - task: generate-config-from-env
+      - translized download
+
+  generate-config-from-env:
+    desc: Generate the config file from the environment variables
+    cmds:
       - task: generate-config
         vars:
           {
@@ -13,15 +25,9 @@ tasks:
             TOKEN: "{{.ACCESS_TOKEN}}",
             PROJECT: "{{.PROJECT_ID}}",
           }
-      - translized upload -o true
-
-  download:
-    desc: Download all translations from Translized
-    cmds:
-      - translized download
 
   generate-config:
-    desc: Generate the Translized config file
+    desc: Generate the Translized config file using passed in variables
     vars:
       TOKEN: "{{.TOKEN}}"
       PROJECT: "{{.PROJECT_ID}}"

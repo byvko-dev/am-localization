@@ -3,8 +3,8 @@
   :access_token: "{token}"
   :project_id: "{projectID}"
   :download:
-    :path: "./<locale_code>.yml"
+    :path: "./translations/<locale_code>.yml"
     :file_format: yml
   :upload:
-    :path: "./{code}.yml"
+    :path: "./translations/{code}.yml"
     :language_code: "{code}"
