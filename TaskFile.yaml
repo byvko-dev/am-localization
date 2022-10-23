@@ -4,7 +4,7 @@ dotenv: [".env"]
 
 tasks:
   upload:
-    desc: Upload the source file to Translized
+    desc: Upload the source file to Translized. Add -- {code} to upload a specific language, defaults to en
     cmds:
       - task: generate-config
         vars:
