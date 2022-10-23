@@ -13,6 +13,7 @@ tasks:
             TOKEN: "{{.ACCESS_TOKEN}}",
             PROJECT: "{{.PROJECT_ID}}",
           }
+      - translized upload -o true
 
   generate-config:
     desc: Generate the Translized config file
@@ -28,4 +29,3 @@ tasks:
           {{ .CONTENT | replace "{projectID}" .PROJECT | replace "{token}" .TOKEN | replace "{code}" .CODE }}
           EOF
         silent: true
-      - translized upload -o true
