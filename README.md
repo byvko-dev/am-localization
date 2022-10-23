@@ -20,7 +20,7 @@ Here is a list of all languages that can be supported:
 	"zh-tw" // Traditional Chinese
 ```
 
-To create a translation for this language, just commit a file names `{code}.yaml` where `code` is the language code.
+To create a translation for this language, just commit a file names `{code}.yml` where `code` is the language code.
 
 #
 
