@@ -1,0 +1,45 @@
+# Stats dataprep API
+localized_hello: Привет
+localized_battles: Бои
+localized_winrate: Победы
+localized_winrate_with_battles: Победы
+localized_average_damage: Ср. Урон
+localized_damage_done: Урон
+localized_wn8_rating: WN8
+localized_rating_overview_title: Рейтинговые Бои
+localized_random_overview_title: Случайные Бои
+localized_shot_accuracy: Точность
+# Bot v2
+COMMANDS_REPORT_DESCRIPTION_FMT_2: Отправляет сообщение разработчикам Aftermath.
+  Любые изображения и ссылки которые вы добавите к сообщению также будут
+  пересланы.
+COMMANDS_STATS_DESCRIPTION_FMT_2: Используйте `%[1]v%[2]v ник` чтобы проверить
+  последнюю сессию игрока.\n- Например:%[1]v%[2]v Vovko
+COMMAND_IS_ADMIN_ONLY: Эта команда доступна только администраторам Aftermath.
+COMMAND_IS_DIRECT_ONLY: Эта команда доступна только в личных сообщениях.
+COMMAND_IS_GUILD_ONLY: Эта команда доступна только на сервере.
+COMMAND_NOT_FOUND: Aftermath не поддерживает эту команду.
+COMMAND_NO_ERROR_HANDLER: При выполнении этой команды произошла ошибка.
+INVALID_ERROR: Что-то пошло не по плану. Попробуйте снова чуть позже.
+UNKNOWN_ERROR: Что-то пошло не по плану. Попробуйте снова чуть позже.
+ERROR_REPORTED: Эта ошибка была автоматически отправлена разработчикам бота.
+MESSAGE_SEND_ERROR: Мне не удалось отправить сообщение в этот канал. Проверьте
+  правильно ли настроены права для Aftermath.
+MESSAGE_REACTION_ADD_ERROR: Мне не удалось добавить реакцию на сообщение.
+  Проверьте правильно ли настроены права для Aftermath.
+MESSAGE_REACTION_REMOVE_ERROR: Мне не удалось удалить реакцию на сообщение.
+  Проверьте правильно ли настроены права для Aftermath.
+MISSING_PERMISSIONS_FMT_1: "Мне не хватает прав для выполнение этой команды: %[1]v"
+PERMISSION_READ_MESSAGE_HISTORY: Читать Историю Сообщений
+USER_BANNED: Вы былил забанены в боте Aftermath.
+SELECT_REALM_BELOW: "Выберите сервер используя реакцию ниже:"
+WG_PLAYER_NOT_FOUND_FMT_2: Мне не удалось найти игрока с именем **%[1]v** на
+  **%[2]v**. Пожалуйста проверьте правильность написания ника.
+NO_DEFAULT_ACCOUNT_SET_FMT_1: Вы никогда не говорили мне свой ник. Используйте
+  команду `%[1]vsetdefault` чтобы установить аккаунт по-умолчанию или укажите
+  ник после команды.
+USER_CHECK_FAILED: Мне не удалось проверить ваш аккаунт. Повторите попытку позже.
+LOCALIZATION_ERROR: Перевод для этой команды отсутствует.
+INTERACTION_NOT_FOUND: Мне не удалось обработать это реакцию. Попропойте использовать команду.
+INTERACTION_SAVE_ERROR: Мне не удалось сохранить это сообщение некоторые реакции
+  могут работать неправильно.
