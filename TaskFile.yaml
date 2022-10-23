@@ -1,0 +1,31 @@
+version: "3"
+
+dotenv: [".env"]
+
+tasks:
+  upload:
+    desc: Upload the source file to Translized
+    cmds:
+      - task: generate-config
+        vars:
+          {
+            CODE: "{{.CLI_ARGS}}",
+            TOKEN: "{{.ACCESS_TOKEN}}",
+            PROJECT: "{{.PROJECT_ID}}",
+          }
+
+  generate-config:
+    desc: Generate the Translized config file
+    vars:
+      TOKEN: "{{.TOKEN}}"
+      PROJECT: "{{.PROJECT_ID}}"
+      CODE: '{{default "en" .CODE}}'
+      CONTENT:
+        sh: cat .translized.example.yml
+    cmds:
+      - cmd: |
+          cat << EOF > .translized.yml
+          {{ .CONTENT | replace "{projectID}" .PROJECT | replace "{token}" .TOKEN | replace "{code}" .CODE }}
+          EOF
+        silent: true
+      - translized upload -o true

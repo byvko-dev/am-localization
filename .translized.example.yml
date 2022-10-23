@@ -1,0 +1,10 @@
+---
+:translized:
+  :access_token: "{token}"
+  :project_id: "{projectID}"
+  :download:
+    :path: "./<locale_code>.yml"
+    :file_format: yml
+  :upload:
+    :path: "./{code}.yml"
+    :language_code: "{code}"
