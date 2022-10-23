@@ -15,6 +15,11 @@ tasks:
           }
       - translized upload -o true
 
+  download:
+    desc: Download all translations from Translized
+    cmds:
+      - translized download
+
   generate-config:
     desc: Generate the Translized config file
     vars:
