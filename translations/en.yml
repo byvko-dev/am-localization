@@ -13,11 +13,11 @@ localized_shot_accuracy: Accuracy
 COMMANDS_REPORT_DESCRIPTION_FMT_2: Send a message to the developers of
   Aftermath. Any images and links you add to the message will also be forwarded.
 COMMANDS_STATS_DESCRIPTION_FMT_2: |-
-  Use %[1]v%[2]s Username to check the last session of a player.
-  - For example: %[1]v%[2]s Vovko
+  Use %[1]v%[2]v Username to check the last session of a player.
+  - For example: %[1]v%[2]v Vovko
 
-  You can also check a specific session with %[1]v%[2]s PlayerName days.
-  - For example: %[1]v%[2]s Vovko-na 3
+  You can also check a specific session with %[1]v%[2]v PlayerName days.
+  - For example: %[1]v%[2]v Vovko-na 3
 COMMAND_IS_ADMIN_ONLY: This command is only available to Aftermath Admins.
 COMMAND_IS_DIRECT_ONLY: This command is only available in Direct Messages.
 COMMAND_IS_GUILD_ONLY: This command is only available while on a server.
@@ -45,3 +45,6 @@ USER_CHECK_FAILED: I was unable to check your account. Please try again later.
 LOCALIZATION_ERROR: It looks like there is a translation missing for this command.
 INTERACTION_NOT_FOUND: I was unable to find this interaction. Please use the original command instead.
 INTERACTION_SAVE_ERROR: I was unable to save this interaction some reactions might not work correctly.
+DEFAULT_ACCOUNT_SET_FMT_2: Your default account has been set to **%[1]v** on **%[2]v**.
+MISSING_REALM: "You never mentioned what server this account is on. Please specify a server after the nickname. For example: `Vovko-na`"
+MISSING_PLYER_NAME: "You need to include a player name and server. For example: `Vovko-na`"
