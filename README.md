@@ -5,19 +5,19 @@ The main branch of this repo is used as the definitive localization config for a
 
 Here is a list of all languages that can be supported:
 ```
-	"en"    // English
-	"ru"    // Russian
-	"pl"    // Polish
-	"de"    // German
-	"fr"    // French
-	"es"    // Spanish
-	"tr"    // Turkish
-	"cs"    // Czech
-	"th"    // Thai
-	"ko"    // Korean
-	"vi"    // Vietnamese
-	"zh-cn" // Simplified Chinese
-	"zh-tw" // Traditional Chinese
+"en"    // English
+"ru"    // Russian
+"pl"    // Polish
+"de"    // German
+"fr"    // French
+"es"    // Spanish
+"tr"    // Turkish
+"cs"    // Czech
+"th"    // Thai
+"ko"    // Korean
+"vi"    // Vietnamese
+"zh-cn" // Simplified Chinese
+"zh-tw" // Traditional Chinese
 ```
 
 To create a translation for this language, just commit a file names `{code}.yml` where `code` is the language code.
